@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.img_logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.theme_kursova {
+    flex-grow: 2;
+    text-align: center;
+}
+
+.theme_kursova h2 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #f1c40f;
+    color: #222;
+    border-radius: 4px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 30px;
+    height: 30px;
+}
+
+.menu-icon span {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-icon:hover span {
+    background-color: #f1c40f;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9); /* Прозорий чорний фон */
+        flex-direction: column;
+        width: 100%;
+        text-align: right;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 20px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
