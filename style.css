@@ -1,107 +1,119 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: cursive;
 }
 
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #222;
-    padding: 10px 20px;
-    font-family: Arial, sans-serif;
+body {
+    background-color: rgb(255, 107, 107);
 }
 
-.img_logo img {
-    width: 50px;
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.navbar {
+    background-color: yellow;
     height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
 }
 
-.theme_kursova {
-    flex-grow: 2;
-    text-align: center;
+.navbar-links {
+    width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.theme_kursova h2 {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.nav-links {
+.navbar-links-list {
     display: flex;
     list-style: none;
-    gap: 15px;
+    justify-content: space-between;
+    width: 500px;
 }
 
-.nav-links li {
-    display: inline-block;
-}
-
-.nav-links a {
-    color: white;
+.navbar-links-list a {
+    color: red;
     text-decoration: none;
-    font-size: 16px;
-    padding: 8px 12px;
-    transition: background-color 0.3s ease;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    /* transition: background-color 0.3s ease; */
 }
 
-.nav-links a:hover {
-    background-color: #f1c40f;
-    color: #222;
-    border-radius: 4px;
+.navbar-links-list a:hover {
+    background-color: blue;
+    color: red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: yellow;
+    border-radius: 10px;
 }
 
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
+#navbar-image-left-flag {
+    justify-content: left
+    
+}
+
+#navbar-image-right-flag {
+    justify-content: right;
+}
+
+.main-info {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.main-header {
+    display: flex;
     justify-content: center;
-    gap: 4px;
-    width: 30px;
-    height: 30px;
+    align-items: center;
+    color: blue;
+    height: 100px;
 }
 
-.menu-icon span {
-    background-color: white;
-    height: 3px;
-    width: 100%;
-    border-radius: 2px;
-    transition: background-color 0.3s ease;
+.mainpage-flag {
+    display: flex;
+    justify-content: center;
 }
 
-.menu-icon:hover span {
-    background-color: #f1c40f;
+.paragraph {
+    padding-bottom: 50px;
 }
 
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.9); /* Прозорий чорний фон */
-        flex-direction: column;
-        width: 100%;
-        text-align: right;
-        padding: 10px 0;
-    }
+.paragraph img {
+    padding-right: 20px;
+}
 
-    .nav-links.active {
-        display: flex;
-    }
+.paragraph-ukraine-flag {
+    display: flex;
+}
 
-    .nav-links li {
-        padding: 10px 20px;
-    }
+.paragraph-ukraine-gerb {
+    display: flex;
+}
 
-    .nav-links a {
-        font-size: 18px;
-        padding: 10px;
-    }
+.paragraph-gerb-info {
+    display: flex;
+}
 
-    .menu-icon {
-        display: flex;
-    }
+.paragraph-flag-info {
+    display: flex;
+}
+
+.paragraph-today-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph-today-header-elements {
+    display: flex;
+}
+
+.paragraph-today-header-right-image {
+    padding-left: 20px;
 }
